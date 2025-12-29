@@ -1,4 +1,4 @@
-name: Build Oneplus 8 Series (ColorOS 15 A15)
+7name: Build Oneplus 8 Series (ColorOS 15 A15)
 
 on:
   workflow_call:
@@ -138,7 +138,6 @@ jobs:
           cd $GITHUB_WORKSPACE/device_kernel
 
           rm -f out/arch/arm64/boot/dtbo.img
-          rm -f out/arch/arm64/boot/dtb
           echo "Removed dtbo.img and dtb for Oneplus 8."
 
       - name: 🔩 Pack Process
